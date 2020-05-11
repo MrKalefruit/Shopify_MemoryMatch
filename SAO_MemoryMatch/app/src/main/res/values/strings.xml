@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">sao_memorymatch</string>
+    <string name="app_name">SAO MemoryvMatch</string>
+
+    <string name="Title">SAO: Memory Match</string>
+    <string name="game1">Standard Memory Match</string>
+    <string name="game2">To be continued</string>
+    <string name="Scoreboard">Score: </string>
+    <string name="exit">Exit</string>
+    <string name="test">Click me </string>
+
 </resources>

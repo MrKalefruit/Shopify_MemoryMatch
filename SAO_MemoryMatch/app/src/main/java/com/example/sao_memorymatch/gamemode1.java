@@ -1,4 +1,4 @@
-package com.example.memorymatchgame;
+package com.example.sao_memorymatch;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,7 +29,6 @@ public class gamemode1 extends AppCompatActivity implements Observer, View.OnCli
     private CardModel deck;
     private TextView score;
 
-    private int counter;
     private int dp1;
 
     private Drawable asuna;
@@ -62,7 +61,7 @@ public class gamemode1 extends AppCompatActivity implements Observer, View.OnCli
         alice= getDrawable(R.drawable.alice);
         klain = getDrawable(R.drawable.card_klain);
         kirito = getDrawable(R.drawable.card_kirito);
-        slica = getDrawable(R.drawable.god_kun);
+        slica = getDrawable(R.drawable.silica);
         sinon = getDrawable(R.drawable.sinon);
         leafa = getDrawable(R.drawable.leafa);
         yui = getDrawable(R.drawable.yui);
@@ -70,7 +69,6 @@ public class gamemode1 extends AppCompatActivity implements Observer, View.OnCli
         deck = new CardModel();
         deck.addObserver(this);
 
-        counter = 0;
         btnList = new ArrayList<>();
 
         androidx.gridlayout.widget.GridLayout gridLayout = findViewById(R.id.gameGrid);
@@ -224,11 +222,11 @@ public class gamemode1 extends AppCompatActivity implements Observer, View.OnCli
             case 3:
                 image = kirito; break;
             case 4:
-                image = god; break;
-            case 5:
                 image = sinon; break;
+            case 5:
+                image = leafa; break;
             case 6:
-                image = yuna; break;
+                image = slica; break;
             case 7:
                 image = yui; break;
 

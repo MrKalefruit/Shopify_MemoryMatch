@@ -1,18 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/SAO_Black"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="100dp"
+            android:fontFamily="@font/sao_regular"
+            android:textColor="@color/SAO_white"
+            android:text="@string/Title"
+            android:textSize="45dp" />
+
+        <Button
+            android:id="@+id/btn_game1"
+            android:background="@drawable/standard_button"
+            android:layout_width="150dp"
+            android:fontFamily="@font/sao_regular"
+            android:textColor="@color/SAO_Black"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:text="@string/game1" />
+
+        <Button
+            android:id="@+id/btn_game2"
+            android:layout_width="150dp"
+            android:background="@drawable/standard_button"
+            android:fontFamily="@font/sao_regular"
+            android:textColor="@color/SAO_Black"
+            android:layout_marginBottom="5dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="@string/game2" />
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:background="@drawable/standard_button"
+
+
+            android:layout_width="150dp"
+            android:textColor="@color/SAO_Black"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/sao_regular"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="@string/exit" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

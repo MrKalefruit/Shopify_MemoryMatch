@@ -1,0 +1,30 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape android:shape="rectangle" android:padding="2dp">
+            <gradient
+                android:angle="45"
+                android:startColor="#eb1717"
+                android:endColor="#eb1717"
+                />
+
+
+            <padding
+                android:top="10dp"
+                android:bottom="10dp"
+                android:left="10dp"
+                android:right="10dp"
+                />
+
+            <stroke
+                android:color="@android:color/white"
+                android:width="10dp"
+                />
+
+            <corners
+                android:radius="5dp"
+                />
+        </shape>
+    </item>
+
+    <item android:drawable="@drawable/asuna" />
+</layer-list>
